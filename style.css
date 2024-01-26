@@ -180,7 +180,6 @@ img {
 /* Products */
 #products {
     background: #010833;
-    height: 100vh;
 }
 .products-container {
     padding: 0 8vw;
@@ -197,4 +196,55 @@ img {
 }
 .header-yellow {
     color: 	#fff867;
+}
+.products-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.product {
+    background: url(assets/gundam-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 41vw;
+}
+.product-description {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    padding: 30px 20px; 
+}
+.product-description h1 {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+.product-description p {
+    color: #fe4026;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin-top: 10px;
+}
+.small-products {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sub-product {
+    background: url(assets/gundam-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+}
+.sub-product-2 {
+    background: url(assets/gundam-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: end;
 }
