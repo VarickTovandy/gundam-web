@@ -164,7 +164,7 @@ img {
     width: 50vw;
     text-align: justify;
 }
-.about-text h1 {
+.section-header {
     color: #010833;
     font-size: 64px;
     line-height: 72px;
@@ -176,4 +176,25 @@ img {
 }
 .about-button {
     margin-top: 70px;
+}
+/* Products */
+#products {
+    background: #010833;
+    height: 100vh;
+}
+.products-container {
+    padding: 0 8vw;
+}
+.products-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.products-header-container span a{
+    color: #fe4026;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.header-yellow {
+    color: 	#fff867;
 }
