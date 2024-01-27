@@ -9,12 +9,15 @@
     scroll-padding-top: 2rem;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 img {
     width: 100%;
 }
@@ -32,15 +35,18 @@ img {
     color: white;
     z-index: 100;
 }
+
 .logo-container {
     display: flex;
     align-items: center;
     font-size: 1.8rem;
 }
+
 .logo-container img {
     height: 68px;
     width: 68px;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -62,36 +68,44 @@ img {
     background-position: center;
     background-attachment: fixed;
 }
+
 .hero-title-container {
     display: flex;
     gap: 1.5rem;
 }
+
 .hero-title-container h1 {
     font-size: 1.8rem;
 }
+
 .hero-bar {
     width: 8px;
     height: auto;
-    background-color: rgb(44,82,179);
+    background-color: rgb(44, 82, 179);
 }
+
 .hero-container {
     width: 60vw;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
+
 .hero-text {
     margin-top: 25px;
 }
+
 .hero-text p {
     font-size: 1.1rem;
     line-height: 1.5rem;
 }
+
 .hero-button {
     margin-top: 25px;
     display: flex;
     gap: 10px;
 }
+
 .button {
     padding: 10px 20px;
     color: white;
@@ -100,6 +114,7 @@ img {
     font-weight: bold;
     border: 1px solid #fe4026;
 }
+
 .sub-button {
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -107,11 +122,13 @@ img {
     background: none;
     border: 1px solid #fe4026;
 }
+
 .trapezium {
     width: 45vw;
     border-bottom: 16vh solid white;
     border-right: 50px solid transparent;
 }
+
 /* Transition */
 .transition {
     position: absolute;
@@ -120,33 +137,39 @@ img {
     display: flex;
     align-items: center;
 }
+
 .parallelogram-container {
     display: flex;
     gap: 15px;
 }
+
 .parallelogram {
     width: 20px;
     height: 12vh;
     background-color: white;
     transform: skew(25deg);
 }
+
 .bottom-transition {
     border-bottom: 16vh solid #010833;
     display: flex;
     justify-content: end;
     align-items: center;
 }
+
 .bottom-parallel {
     position: absolute;
     right: 0;
     margin-right: 60px;
 }
+
 /* About */
 #about {
     max-height: 100vh;
     display: flex;
     position: relative;
 }
+
 .about-img {
     object-fit: cover;
     object-position: top;
@@ -154,70 +177,87 @@ img {
     height: auto;
     margin-top: 20px;
 }
+
 .about-container {
     background: white;
     display: flex;
     justify-content: space-between;
     padding-left: 8vw;
 }
+
 .about-text {
     width: 50vw;
     text-align: justify;
 }
+
 .section-header {
     color: #010833;
     font-size: 64px;
     line-height: 72px;
 }
+
 .about-text p {
     margin-top: 40px;
     font-size: 1.2rem;
     line-height: 1.8rem;
 }
+
 .about-button {
     margin-top: 70px;
 }
+
 /* Products */
 #products {
     background: #010833;
+    position: relative;
 }
+
 .products-container {
     padding: 0 8vw;
+    padding-bottom: 25vh;
 }
+
 .products-header-container {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
-.products-header-container span a{
+
+.products-header-container span a {
     color: #fe4026;
     text-decoration: underline;
     font-size: 1.2rem;
 }
+
 .header-yellow {
-    color: 	#fff867;
+    color: #fff867;
 }
+
 .products-list {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin: auto;
 }
+
 .product {
-    background: url(assets/gundam-1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
     width: 41vw;
 }
+
 .product-description {
     background-color: rgba(0, 0, 0, 0.5);
     width: inherit;
-    padding: 30px 20px; 
+    padding: 30px 20px;
 }
+
 .product-description h1 {
     color: white;
     font-size: 1.3rem;
     line-height: 1.4rem;
 }
+
 .product-description p {
     color: #fe4026;
     font-weight: 500;
@@ -225,26 +265,83 @@ img {
     line-height: 1.3rem;
     margin-top: 10px;
 }
+
 .small-products {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
+.sub-product-background {
+    display: flex;
+    align-items: end;
+    width: 40vw;
+    height: 50vh;
+}
+
 .sub-product {
     background: url(assets/gundam-2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    width: 40vw;
-    height: 50vh;
-    display: flex;
-    align-items: end;
 }
+
 .sub-product-2 {
     background: url(assets/gundam-3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+}
+/* Carousel */
+.main-product-container {
+    position: relative;
+    align-self: stretch;
     width: 40vw;
-    height: 50vh;
-    display: flex;
-    align-items: end;
+    height: 105vh;
+}
+.main-product-container .main-product {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.main-product-container .main-product img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes prev1 {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes prev2 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
 }
